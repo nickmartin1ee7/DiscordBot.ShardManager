@@ -17,8 +17,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore TheThinker.DiscordBot.sln
+      run: dotnet restore DiscordBot.ShardManager.sln
     - name: Build
-      run: dotnet build --no-restore TheThinker.DiscordBot.sln
+      run: dotnet build --no-restore DiscordBot.ShardManager.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal TheThinker.DiscordBot.sln
+      run: dotnet test --no-build --verbosity normal DiscordBot.ShardManager.sln
